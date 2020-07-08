@@ -8,6 +8,8 @@ endif
 if empty(glob('~/.local/share/nvim/plugged'))     
         !mkdir "$HOME/.local/share/nvim/plugged"
 endif
+
+
 """ Plugins{{{
 call plug#begin("$HOME/.local/share/nvim/plugged/")
 
