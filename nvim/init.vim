@@ -1,5 +1,15 @@
+" Install Vim Plug Plugin manager
+if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
+        silent !sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+        autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+  
+" Make directory for plugins
+if empty(glob('~/.local/share/nvim/plugged'))     
+        !mkdir "$HOME/.local/share/nvim/plugged"
+endif
 """ Plugins{{{
-call plug#begin('/home/ron/.local/share/nvim/plugged/')
+call plug#begin("$HOME/.local/share/nvim/plugged/")
 
 " Ayu theme for vim
 Plug 'https://github.com/ayu-theme/ayu-vim'
