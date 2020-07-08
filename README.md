@@ -1,2 +1,2 @@
 # .files
-Repository to store my device configuration files.
+Repository to store and install my device configuration files.
