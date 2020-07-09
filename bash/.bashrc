@@ -138,19 +138,9 @@ ex ()
   fi
 }
 
-# alias for init.vim
-alias init.vim="nvim ~/.config/nvim/init.vim"
-# alias to mount windows 
-alias winmount="sudo mount /dev/nvme0n1p3 /media/windows"
-# alias to unmount windows
-alias winunmount="sudo umount /dev/nvme0n1p3"
-# alias for Ron/folder in Windows
-alias Ron="cd /media/windows/Users/siddh/Desktop/Ron"
 # alias for python3, pip3
 alias python=python3
 alias pip=pip3
-# alias for xdg-open
-alias open=xdg-open
 
 # Show git branch name
 force_color_prompt=yes
