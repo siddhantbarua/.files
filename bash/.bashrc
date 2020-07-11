@@ -157,3 +157,7 @@ unset color_prompt force_color_prompt
 
 # neovim as default editor
 export EDITOR=nvim
+
+# source fzf key bindings and completion files
+source /usr/share/fzf/key-bindings.bash
+source /usr/share/fzf/completion.bash
