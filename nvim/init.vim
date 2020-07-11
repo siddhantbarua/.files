@@ -98,6 +98,10 @@ set hlsearch
 nnoremap <leader><space> :nohlsearch<CR>
 " Nerd-Tree toggle
 map <C-n> :NERDTreeToggle<CR>
+" Trigger fzf
+nnoremap <silent> <leader>o :Files<CR>
+nnoremap <silent> <leader>O :Files!<CR>
+
 "}}}
 
 """ Folding{{{
