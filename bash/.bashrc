@@ -161,3 +161,8 @@ export EDITOR=nvim
 # source fzf key bindings and completion files
 source /usr/share/fzf/key-bindings.bash
 source /usr/share/fzf/completion.bash
+
+# Set Alt+E key binding for opening files using fzf for editing
+bind -m emacs-standard '"\ee": "nvim $(fzf)*\C-m"'
+bind -m vi-command '"\ee": "\nvim $(fzf)*\C-m"'
+bind -m vi-insert '"\ee": "nvim $(fzf)*\C-m"'
