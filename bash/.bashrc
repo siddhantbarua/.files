@@ -166,3 +166,29 @@ source /usr/share/fzf/completion.bash
 bind -m emacs-standard '"\ee": "nvim $(fzf)*\C-m"'
 bind -m vi-command '"\ee": "\nvim $(fzf)*\C-m"'
 bind -m vi-insert '"\ee": "nvim $(fzf)*\C-m"'
+
+# User functions
+# To cd then ls
+cl(){
+        cd $1
+        ls
+}
+
+# To mount windows drive and go to Ron folder
+winmount(){
+        sudo mount /dev/nvme0n1p3 /media/windows
+        cd /media/windows/Users/siddh/Desktop/Ron/
+}
+
+# To unmount windows drive.
+winunmount(){
+        cd ~
+        if [ ! -z "$(ls -A /media/windows)" ]; then
+                        sudo umount /media/windows
+        fi
+}
+
+# Opening documents
+open(){
+        xdg-open $1
+}
