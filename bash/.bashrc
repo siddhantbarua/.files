@@ -190,5 +190,5 @@ winunmount(){
 
 # Opening documents
 open(){
-        xdg-open $1
+        xdg-open "$1"
 }
