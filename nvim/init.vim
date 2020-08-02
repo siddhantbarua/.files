@@ -107,8 +107,8 @@ nnoremap <silent> <leader>O :Files!<CR>
 "}}}
 
 """ Folding{{{
-" enable folding
-set foldenable
+" toggle folding using F5
+nnoremap <F5> :set foldenable!<CR>
 " open most folds by default
 " set foldlevelstart=10
 " max 10 nested folds
