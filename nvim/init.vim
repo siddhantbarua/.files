@@ -56,6 +56,8 @@ set expandtab
 "}}}
 
 """UI{{{
+" Disable automatic comment insertion
+autocmd Filetype * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " show line numbers
 set number
 nnoremap <F2> :set number!<CR>
