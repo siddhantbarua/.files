@@ -38,10 +38,10 @@ call plug#end()
 set termguicolors     " enable true colors support
 "let ayucolor="light"  " for light version of theme
 "let ayucolor="mirage" " for mirage version of theme
-"let ayucolor="dark"   " for dark version of theme
+let ayucolor="dark"   " for dark version of theme
 colorscheme ayu
-"change to mirage version using F4
-nnoremap <F4> :let ayucolor="mirage"<CR>:colorschem ayu<CR>
+" Use F4 to toggle between dark and mirage theme
+nnoremap <expr> <F4> ayucolor=="dark" ? ':let ayucolor="mirage"<CR>:colorscheme ayu<CR>' : ':let ayucolor="dark"<CR>:colorscheme ayu<CR>'
 " enable syntax processing
 syntax enable
 "}}}
