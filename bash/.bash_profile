@@ -19,6 +19,11 @@ if [ -d "$HOME/.local/bin" ]; then
         export PATH="$HOME/.local/bin:$PATH"
 fi
 
+# Add eclipse IDE to PATH
+if [ -d "$HOME/eclipse/java-2020-06/eclipse/" ]; then
+        export PATH="$HOME/eclipse/java-2020-06/eclipse/:$PATH"
+fi
+
 # add to library path
 if [ -d "/usr/local/lib" ]; then
         export LD_LIBRARY_PATH=/usr/local/lib
