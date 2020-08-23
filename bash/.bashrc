@@ -192,3 +192,9 @@ winunmount(){
 open(){
         xdg-open "$1"
 }
+
+# Linux time keeps changing to UTC
+timechange(){
+        sudo timedatectl set-local-rtc 0
+        sudo timedatectl set-local-rtc 1 --adjust-system-clock
+}
