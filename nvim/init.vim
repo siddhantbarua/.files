@@ -49,6 +49,7 @@ syntax enable
 """Spaces and Tabs{{{
 " number of visual spaces per TAB
 set tabstop=4
+set shiftwidth=4
 " number of spaces in TAB when editing
 set softtabstop=4
 " convert tabs to spaces
